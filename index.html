@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        background-color: coral;
+        color: white;
+        box-shadow: 10px 10px black;
+        padding: 5px;
+      "
+    >
+      Personal Finance Tracker
+    </h1>
+    <h2>Track My Budget</h2>
+
+    <div class="separate">
+      <div class="col1" style="background-color: #2f3543">
+        <p style="margin-left: 20px; font-size: 32px">your balance</p>
+        <div class="savings">0</div>
+
+        <div class="totals" style="padding: 20px">
+          <div
+            id="totalExpense"
+            style="border-style: solid; border-color: red"
+          ></div>
+
+          <div
+            id="totalIncome"
+            style="border-style: solid; border-color: green"
+          ></div>
+        </div>
+
+        <label for="info" style="margin-left: 20px">Description</label>
+        <br />
+
+        <textarea
+          id="info"
+          placeholder="Description"
+          style="
+            margin-left: 20px;
+            margin-right: 0px;
+            border-right-width: 0px;
+            padding-right: 0px;
+          "
+        ></textarea>
+        <br />
+        <label for="amount" style="margin-left: 20px">Amount</label>
+        <br />
+        <input
+          type="number"
+          placeholder="add amount ex -20 or 20"
+          id="amount"
+        />
+        <br />
+        <input type="button" value="Add Transaction" id="submission" />
+        <br />
+        <input type="button" id="deleteAll" value="DeleteAll" />
+      </div>
+
+      <div class="col2" style="border-style: solid">
+        <div class="items ExpenseItems">
+          <h1 style="color: lightcoral">Expenses</h1>
+          <div class="expenses"></div>
+        </div>
+        <div class="items IncomeItems">
+          <h1 style="color: green">Income</h1>
+
+          <div class="income"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

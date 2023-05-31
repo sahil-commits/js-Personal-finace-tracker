@@ -1,0 +1,134 @@
+.separate{
+    display: grid;
+    /* width:1200px;
+    height: 600px;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); */
+
+ 
+    width:100%;
+    height: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    /* grid-template-columns: repeat(2,600px); */
+  
+    
+
+}
+.totals{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#totalExpense p{
+margin: 10px;
+
+
+}
+#totalIncome p{
+    margin: 10px;
+}
+
+
+label{
+    
+    margin-top: 50px;
+}
+
+
+
+.savings{
+    width: 400px;
+    font-size: 32px;
+    margin-left:20px ;
+}
+
+#submission{
+    background-color: #2e86de;
+    color: white;
+    border-radius: 4px;
+}
+input{
+   height: 42px;
+   width: 350px;
+   margin:15px;
+}   
+
+textarea{
+    margin:15px;
+    font-size: large;
+    width: 348px;
+}
+
+.income p,.expenses p{
+    border-style:solid;
+    padding: 5px;
+    
+}
+.income p{
+  border-color: green;
+}
+
+
+.income p:hover{
+    cursor: pointer;
+    background-color: grey;
+   
+}
+
+
+input{
+    font-size: large;
+}
+.expenses p:hover{
+    
+  
+    cursor: pointer;
+    background-color: grey;
+}
+
+.expenses p{
+    border-color:lightcoral; ;
+}
+.col1{
+    color:aliceblue
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ExpenseItems{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #DFE6E9;
+
+}
+
+.IncomeItems{
+    grid-column-start: -2;
+    grid-column-end: -1;
+    background-color: #DFE6E9;
+}
+
+
+.col2{
+
+
+
+   display: grid;
+   grid-template-columns: 50% 50%;
+   background-color:black;
+   column-gap: 2px;
+   
+
+}
+#info{
+    border-radius: 4px;
+}
+
+#amount{
+    border-radius: 4px;
+    width:340px;
+}
