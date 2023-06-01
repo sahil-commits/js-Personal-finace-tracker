@@ -63,9 +63,10 @@ some.addEventListener('click',()=>{
         ListIncomes.push(income)
         localStorage.setItem("Incomes",JSON.stringify( ListIncomes))
         displayTransactions()
-        document.querySelector('#info').value=""
-        document.querySelector('#amount').value=""
+        
      }
+    document.querySelector('#info').value=""
+        document.querySelector('#amount').value=""
 
 })
 
